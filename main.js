@@ -229,7 +229,7 @@
   /*
    * 这只皮卡丘送给屏幕前的你，希望你开心。
    * (欢迎关注我的GayHub
-   * https://github.com/spontaleo)
+   * https://github.com/TraderNayuta)
    */
   `
 
