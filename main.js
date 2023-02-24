@@ -28,7 +28,7 @@
     let n = 0;
     let pika;
 
-    // 用setTimeout模拟setInterval以实现速度控制
+    // use SetTimeout to emulate SetInterval for speed control
     let id = setTimeout(function pika() {
       n += 1;
       codeContainer.innerHTML = code.substring(0, n);
@@ -54,11 +54,12 @@
 
   let code = `
   /*
-   * 大家好，我是Nayuta。给大家整个活儿，来画个皮卡丘吧~
+   * Hello, I'm Jett. Next you will see the face of Pikachu on the screen.
+   * You can also use the buttons on the right to control the speed.
    */
 
   /*
-   * 首先来画皮卡丘的皮
+   * First to paint Pikachu's skin.
    */
   .preview {
     background: #FFE204;
@@ -71,7 +72,7 @@
   }
 
   /*
-   * 接下来画一只鼻子
+   * Next, paint its nose
    */
   .nose {
     width: 0;
@@ -87,7 +88,7 @@
   }
 
   /*
-   * 画对眼睛
+   * Painting the eyes
    */
   .eye {
     width: 52px;
@@ -98,7 +99,7 @@
   }
 
   /*
-   * 没眼珠怎么行呢，来点灵性 
+   * Have light in the eyes
    */
   .eye::after {
     content: '';
@@ -113,7 +114,7 @@
   }
 
   /*
-   * 把眼睛放到正确的地方 
+   * Putting them in the right place
    */
   .eye.left {
     right: 50%;
@@ -126,7 +127,7 @@
   }
 
   /*
-   * 然后画脸颊，这样才更可爱 
+   * How about a little blush?
    */
   .cheek {
     width: 69px;
@@ -139,7 +140,7 @@
   }
 
   /*
-   * 把脸颊放到正确的地方，左右要对称 
+   * Putting them in the right place
    */
   .cheek.left {
     right: 50%;
@@ -152,7 +153,7 @@
   }
 
   /*
-   * 画上唇 
+   * Painting the upper lip
    */
   .upper_lip {
     width: 66px;
@@ -180,7 +181,7 @@
   }
 
   /*
-   * 画下唇 
+   * Then the lower lip
    */
   .lower_lip_wrapper {
     width: 150px;
@@ -204,7 +205,7 @@
   }
 
   /*
-  * 添个可爱的舌头吧 
+  * Add a cute tongue to it
   */
   .lower_lip::after {
     content: '';
@@ -220,16 +221,15 @@
   }
 
   /* 
-   * 哎呀，小舌头调皮了，让它乖乖地回去吧
+   * The little tongue is naughty, let it go back to where it belongs
    */
   #pikachu> :not(:last-child) {
     z-index: 1;
   }
 
   /*
-   * 这只皮卡丘送给屏幕前的你，希望你开心。
-   * (欢迎关注我的GayHub
-   * https://github.com/TraderNayuta)
+   * Wish you happy! o(*￣▽￣*)ブ
+   * (Welcome to follow my GitHub https://github.com/jettzhang95)
    */
   `
 
